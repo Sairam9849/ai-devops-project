@@ -4,5 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-   return "AI DevOps Project Running"
+    print("error occurred")   # 👈 THIS LINE ADD
+    return "Testing Error"
+
 app.run(host="0.0.0.0", port=5000)
